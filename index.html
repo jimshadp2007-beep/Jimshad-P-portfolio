@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jimshad P | AI & Data Science Portfolio</title>
+    <meta name="description" content="Portfolio of Jimshad P - AI & Data Science Specialist, Data Analyst, and Machine Learning Enthusiast. Transforming raw data into actionable insights.">
+    <meta name="keywords" content="Jimshad P, Data Analyst, Data Scientist, Machine Learning, Python, SQL, Power BI, Portfolio, IQJITA">
+    <meta name="author" content="Jimshad P">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Jimshad P | AI & Data Science Portfolio">
+    <meta property="og:description" content="Data Analyst & Aspiring Data Scientist transforming raw data into meaningful business insights.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- DevIcon CDN for Tech Stack -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader-screen" class="loader-screen">
+        <div class="loader-content">
+            <div class="cube-wrapper">
+                <div class="cube">
+                    <div class="side front"></div>
+                    <div class="side back"></div>
+                    <div class="side right"></div>
+                    <div class="side left"></div>
+                    <div class="side top"></div>
+                    <div class="side bottom"></div>
+                </div>
+            </div>
+            <h2 class="loader-title"><span class="neon-blue">JIMSHAD</span> <span class="neon-purple">P</span></h2>
+            <p class="loader-sub">Initializing Intelligence Network...</p>
+            <div class="loader-progress-bar"><div id="loader-progress" class="loader-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+    <!-- Custom Cursor & Glow -->
+    <div id="cursor-dot" class="cursor-dot"></div>
+    <div id="cursor-glow" class="cursor-glow"></div>
+
+    <!-- Particle Canvas Background -->
+    <canvas id="particle-canvas" class="particle-canvas"></canvas>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-symbol"><i class="fa-solid fa-brain"></i></span>
+                <span class="brand-text">Jimshad<span class="highlight">.P</span></span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a>
+                <a href="#skills" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Skills</a>
+                <a href="#projects" class="nav-link"><i class="fa-solid fa-folder-open"></i> Projects</a>
+                <a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                <a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i> Certificates</a>
+                <a href="#github-section" class="nav-link"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="#contact" class="nav-link btn-nav-contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon moon-icon"></i>
+                    <i class="fa-solid fa-sun sun-icon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Social Dock -->
+    <div class="social-dock">
+        <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" aria-label="GitHub Profile" class="dock-item">
+            <i class="fa-brands fa-github"></i>
+            <span class="dock-tooltip">GitHub</span>
+        </a>
+        <a href="https://www.linkedin.com/in/jimshad-p-906b72384" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="dock-item">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <span class="dock-tooltip">LinkedIn</span>
+        </a>
+        <a href="mailto:jimshadp2007@gmail.com" aria-label="Send Email" class="dock-item">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="dock-tooltip">Email</span>
+        </a>
+        <a href="tel:+919633784565" aria-label="Phone Call" class="dock-item">
+            <i class="fa-solid fa-phone"></i>
+            <span class="dock-tooltip">Call</span>
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="badge-pill">
+                        <span class="pulse-dot"></span> Available for Internships & Collaborations
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text glow-text">Jimshad P</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-prefix">I am a </span>
+                        <span id="typing-text" class="typing-text"></span>
+                        <span class="cursor-caret">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        I transform raw data into meaningful insights through Data Analytics, Machine Learning, and Business Intelligence. Passionate about solving real-world problems using Python, SQL, and Power BI.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span> <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="mailto:jimshadp2007@gmail.com?subject=Requesting%20Resume%20-%20Jimshad%20P" class="btn btn-secondary">
+                            <i class="fa-solid fa-download"></i> <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i> <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <!-- Statistics Cards -->
+                    <div class="stats-container">
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-number" data-target="3">0</h3>
+                                <p class="stat-label">3+ ML Projects</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon python-icon"><i class="fa-brands fa-python"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-number-text">Advanced</h3>
+                                <p class="stat-label">Python</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon sql-icon"><i class="fa-solid fa-database"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-number-text">Expert</h3>
+                                <p class="stat-label">SQL & MySQL</p>
+                            </div>
+                        </div>
+                        <div class="stat-card glass-card">
+                            <div class="stat-icon bi-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="stat-info">
+                                <h3 class="stat-number-text">Dashboards</h3>
+                                <p class="stat-label">Power BI</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profile Showcase Frame -->
+                <div class="hero-visual">
+                    <div class="avatar-portal">
+                        <div class="portal-ring ring-1"></div>
+                        <div class="portal-ring ring-2"></div>
+                        <div class="avatar-wrapper glass-card">
+                            <img src="assets/jimshad.jpg" alt="Jimshad P - Data Scientist" class="profile-img">
+                            <div class="avatar-overlay"></div>
+                        </div>
+                        
+                        <!-- Floating AI Tech Badges -->
+                        <div class="floating-badge badge-1 glass-card">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="floating-badge badge-2 glass-card">
+                            <i class="fa-solid fa-brain neon-purple-icon"></i>
+                            <span>Machine Learning</span>
+                        </div>
+                        <div class="floating-badge badge-3 glass-card">
+                            <i class="fa-solid fa-chart-column neon-blue-icon"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="floating-badge badge-4 glass-card">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-id-card"></i> Discovery</span>
+                    <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-image-column">
+                        <div class="about-card glass-card">
+                            <div class="card-glow"></div>
+                            <div class="about-badge"><i class="fa-solid fa-user-check"></i> Professional Profile</div>
+                            <h3>Jimshad P</h3>
+                            <p class="tagline">Data Scientist | Expert in Python, MySQL, Power BI | Data Analysis</p>
+                            <div class="location-badge">
+                                <i class="fa-solid fa-location-dot"></i> Tirur, Malappuram, Kerala, India
+                            </div>
+                            <hr class="divider">
+                            <div class="quick-facts">
+                                <div class="fact-item">
+                                    <i class="fa-solid fa-microchip"></i>
+                                    <div>
+                                        <strong>Focus Area</strong>
+                                        <span>AI, ML & Business Intelligence</span>
+                                    </div>
+                                </div>
+                                <div class="fact-item">
+                                    <i class="fa-solid fa-building-columns"></i>
+                                    <div>
+                                        <strong>Institute</strong>
+                                        <span>IQJITA Innovative LLP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content-column glass-card">
+                        <h3>Transforming Complex Data into Business Intelligence</h3>
+                        <p class="about-lead">
+                            I’m an Artificial Intelligence and Data Science professional passionate about turning raw, unstructured data into actionable insights and intelligent predictive solutions.
+                        </p>
+                        <p>
+                            Currently pursuing my Diploma at <strong>IQJITA Innovative LLP</strong>, my journey revolves around mastering Python, SQL database management, exploratory data analysis (EDA), and machine learning algorithms. I thrive at the intersection of business strategy and analytical computing.
+                        </p>
+
+                        <div class="about-bullets">
+                            <div class="bullet-box">
+                                <i class="fa-solid fa-robot bullet-icon"></i>
+                                <div>
+                                    <h4>AI & Data Science Professional</h4>
+                                    <p>Deepening skills in regression, classification, and deep learning frameworks like TensorFlow.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-box">
+                                <i class="fa-solid fa-chart-line bullet-icon"></i>
+                                <div>
+                                    <h4>Passionate about Data Analytics</h4>
+                                    <p>Building interactive dashboards, heatmaps, and geographic trend visualizers in Power BI & Excel.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-box">
+                                <i class="fa-solid fa-lightbulb bullet-icon"></i>
+                                <div>
+                                    <h4>Solving Real-World Problems</h4>
+                                    <p>Applying statistical feature engineering and machine learning models to solve economic and financial challenges.</p>
+                                </div>
+                            </div>
+                            <div class="bullet-box">
+                                <i class="fa-solid fa-rocket bullet-icon"></i>
+                                <div>
+                                    <h4>Seeking Opportunities</h4>
+                                    <p>Actively looking for internships, entry-level data roles, and collaborative open-source AI projects.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Carousel Banner -->
+        <div class="tech-banner">
+            <div class="tech-track">
+                <div class="tech-item"><i class="devicon-python-plain colored"></i> Python</div>
+                <div class="tech-item"><i class="devicon-mysql-plain colored"></i> SQL</div>
+                <div class="tech-item"><i class="fa-solid fa-chart-pie bi-color"></i> Power BI</div>
+                <div class="tech-item"><i class="devicon-pandas-plain colored"></i> Pandas</div>
+                <div class="tech-item"><i class="devicon-numpy-plain colored"></i> NumPy</div>
+                <div class="tech-item"><i class="devicon-scikitlearn-line colored"></i> Scikit-learn</div>
+                <div class="tech-item"><i class="devicon-tensorflow-line colored"></i> TensorFlow</div>
+                <div class="tech-item"><i class="devicon-vscode-plain colored"></i> VS Code</div>
+                <div class="tech-item"><i class="devicon-git-plain colored"></i> Git</div>
+                <div class="tech-item"><i class="devicon-github-original colored"></i> GitHub</div>
+
+                <!-- Duplicate for seamless loop -->
+                <div class="tech-item"><i class="devicon-python-plain colored"></i> Python</div>
+                <div class="tech-item"><i class="devicon-mysql-plain colored"></i> SQL</div>
+                <div class="tech-item"><i class="fa-solid fa-chart-pie bi-color"></i> Power BI</div>
+                <div class="tech-item"><i class="devicon-pandas-plain colored"></i> Pandas</div>
+                <div class="tech-item"><i class="devicon-numpy-plain colored"></i> NumPy</div>
+                <div class="tech-item"><i class="devicon-scikitlearn-line colored"></i> Scikit-learn</div>
+                <div class="tech-item"><i class="devicon-tensorflow-line colored"></i> TensorFlow</div>
+                <div class="tech-item"><i class="devicon-vscode-plain colored"></i> VS Code</div>
+                <div class="tech-item"><i class="devicon-git-plain colored"></i> Git</div>
+                <div class="tech-item"><i class="devicon-github-original colored"></i> GitHub</div>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-gears"></i> Capabilities</span>
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills & Expertise</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                            <h3>Programming</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="devicon-python-plain colored"></i> Python</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="devicon-mysql-plain colored"></i> SQL / MySQL</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Data Analytics -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                            <h3>Data Analytics</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag"><i class="fa-solid fa-broom"></i> Data Cleaning</span>
+                            <span class="skill-tag"><i class="fa-solid fa-chart-simple"></i> EDA</span>
+                            <span class="skill-tag"><i class="fa-solid fa-filter"></i> Feature Engineering</span>
+                            <span class="skill-tag"><i class="fa-solid fa-calculator"></i> Statistics</span>
+                            <span class="skill-tag"><i class="fa-solid fa-vial"></i> Missing Value Imputation</span>
+                            <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> Categorical Encoding</span>
+                        </div>
+                    </div>
+
+                    <!-- Machine Learning -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fa-solid fa-brain"></i></div>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="devicon-scikitlearn-line colored"></i> Scikit-learn</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="devicon-tensorflow-line colored"></i> TensorFlow</span>
+                                    <span class="skill-percent">75%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-subtags">
+                            <span>Classification</span> • <span>Regression</span> • <span>SMOTE</span> • <span>Model Evaluation (ROC-AUC, RMSE)</span>
+                        </div>
+                    </div>
+
+                    <!-- Visualization -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <h3>Data Visualization</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-chart-column bi-color"></i> Power BI</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span><i class="fa-solid fa-file-excel excel-color"></i> Microsoft Excel</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                            </div>
+                        </div>
+                        <div class="skill-subtags">
+                            <span>Interactive Dashboards</span> • <span>Heatmaps</span> • <span>Business Reports</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fa-solid fa-wrench"></i></div>
+                            <h3>Tools & Environment</h3>
+                        </div>
+                        <div class="tools-grid">
+                            <div class="tool-box"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+                            <div class="tool-box"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                            <div class="tool-box"><i class="devicon-github-original"></i><span>GitHub</span></div>
+                            <div class="tool-box"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Soft Skills -->
+                    <div class="skill-card glass-card">
+                        <div class="skill-header">
+                            <div class="skill-icon"><i class="fa-solid fa-comments"></i></div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="soft-skills-grid">
+                            <div class="soft-badge"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</div>
+                            <div class="soft-badge"><i class="fa-solid fa-brain"></i> Analytical Thinking</div>
+                            <div class="soft-badge"><i class="fa-solid fa-bullhorn"></i> Communication</div>
+                            <div class="soft-badge"><i class="fa-solid fa-people-group"></i> Teamwork</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-laptop-code"></i> Portfolio Work</span>
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Filter & Search Toolbar -->
+                <div class="project-toolbar glass-card">
+                    <div class="filter-tabs">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                        <button class="filter-btn" data-filter="analytics">Data Analytics</button>
+                        <button class="filter-btn" data-filter="bi">Power BI / Visualization</button>
+                    </div>
+                    <div class="search-box">
+                        <i class="fa-solid fa-search"></i>
+                        <input type="text" id="project-search" placeholder="Search projects by tech or keyword...">
+                    </div>
+                </div>
+
+                <!-- Projects Showcase Grid -->
+                <div class="projects-grid" id="projects-container">
+                    
+                    <!-- Project 1: Rainfall Analysis Dashboard -->
+                    <div class="project-card glass-card tilt-card" data-category="analytics bi" data-keywords="rainfall python pandas numpy power bi eda heatmaps geographic analytics">
+                        <div class="project-banner">
+                            <img src="assets/rainfall.png" alt="Rainfall Analytics Dashboard Preview" class="project-img">
+                            <div class="project-img-overlay"></div>
+                            <div class="project-category-tag"><i class="fa-solid fa-chart-pie"></i> Data Analytics & BI</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Rainfall Analysis Dashboard</h3>
+                            <div class="project-tech">
+                                <span>Python</span><span>Pandas</span><span>NumPy</span><span>Power BI</span>
+                            </div>
+                            <p class="project-desc">
+                                Built an end-to-end rainfall analytics solution including preprocessing, EDA, feature engineering, and an interactive Power BI dashboard with trend analysis, heatmaps, and geographical insights.
+                            </p>
+                            
+                            <div class="project-accordion">
+                                <details>
+                                    <summary><i class="fa-solid fa-circle-info"></i> Key Details & Learnings</summary>
+                                    <div class="accordion-content">
+                                        <p><strong>Key Features:</strong> Handled missing values & duplicate records in Jupyter Notebook, annual validation checks, custom rainfall classification categories.</p>
+                                        <p><strong>Challenges:</strong> Cleaning complex historical climate datasets and modeling temporal heatmaps efficiently.</p>
+                                        <p><strong>Learnings:</strong> Mastered DAX expressions in Power BI and automated Python preprocessing pipelines.</p>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository Link</a>
+                                <a href="#contact" class="btn btn-sm btn-primary"><i class="fa-solid fa-chart-line"></i> View Insights</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Loan Approval Prediction -->
+                    <div class="project-card glass-card tilt-card" data-category="ml" data-keywords="loan approval machine learning python scikit-learn random forest logistic regression gradient boosting smote classification rocs">
+                        <div class="project-banner">
+                            <img src="assets/loan.png" alt="Loan Approval ML System Preview" class="project-img">
+                            <div class="project-img-overlay"></div>
+                            <div class="project-category-tag"><i class="fa-solid fa-brain"></i> Machine Learning</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Loan Approval Prediction System</h3>
+                            <div class="project-tech">
+                                <span>Python</span><span>Scikit-learn</span><span>Random Forest</span><span>Logistic Regression</span><span>Gradient Boosting</span>
+                            </div>
+                            <p class="project-desc">
+                                Built a complete ML pipeline for predicting loan approval using financial preprocessing, SMOTE class balancing, feature engineering, model comparison, ROC-AUC evaluation, and deployment workflow.
+                            </p>
+
+                            <div class="project-accordion">
+                                <details>
+                                    <summary><i class="fa-solid fa-circle-info"></i> Key Details & Learnings</summary>
+                                    <div class="accordion-content">
+                                        <p><strong>Key Features:</strong> Multi-classifier benchmark, SMOTE resampling for imbalanced loan applications, confusion matrix and ROC-AUC metrics.</p>
+                                        <p><strong>Challenges:</strong> Resolving severe class imbalance without overfitting high-risk applicant profiles.</p>
+                                        <p><strong>Learnings:</strong> In-depth understanding of ensemble models and hyperparameter tuning.</p>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository Link</a>
+                                <a href="#contact" class="btn btn-sm btn-primary"><i class="fa-solid fa-gears"></i> Pipeline Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: India GDP Growth Prediction -->
+                    <div class="project-card glass-card tilt-card" data-category="ml analytics" data-keywords="india gdp growth machine learning regression random forest xgboost python economic forecasting rmse mae">
+                        <div class="project-banner">
+                            <img src="assets/gdp.png" alt="India GDP Forecasting Preview" class="project-img">
+                            <div class="project-img-overlay"></div>
+                            <div class="project-category-tag"><i class="fa-solid fa-arrow-trend-up"></i> ML & Economics</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">India GDP Growth Rate Prediction</h3>
+                            <div class="project-tech">
+                                <span>Python</span><span>Machine Learning</span><span>Random Forest</span><span>XGBoost</span>
+                            </div>
+                            <p class="project-desc">
+                                Developed an economic forecasting model using regression algorithms with macro feature engineering, cross-validation, RMSE/MAE performance metrics, and model interpretation.
+                            </p>
+
+                            <div class="project-accordion">
+                                <details>
+                                    <summary><i class="fa-solid fa-circle-info"></i> Key Details & Learnings</summary>
+                                    <div class="accordion-content">
+                                        <p><strong>Key Features:</strong> Multi-variable macro-economic analysis, cross-validated XGBoost regressor, feature importance extraction.</p>
+                                        <p><strong>Challenges:</strong> Managing collinearity among macroeconomic indicators like inflation, interest rates, and trade balances.</p>
+                                        <p><strong>Learnings:</strong> Applied regression evaluation techniques ($R^2$, RMSE, MAE) and model interpretability tools.</p>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository Link</a>
+                                <a href="#contact" class="btn btn-sm btn-primary"><i class="fa-solid fa-chart-simple"></i> View Analysis</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Credit Card Fraud Detection using Clustering -->
+                    <div class="project-card glass-card" data-category="ml" data-keywords="credit card fraud detection clustering machine learning unsupervised kmeans python jupyter anomaly detection">
+                        <div class="project-banner rainbow-gradient-1">
+                            <div class="banner-icon"><i class="fa-solid fa-shield-cat"></i></div>
+                            <div class="project-category-tag">Unsupervised ML & Fraud AI</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Credit Card Fraud Detection (Clustering)</h3>
+                            <div class="project-tech">
+                                <span>Python</span><span>Jupyter</span><span>Unsupervised Learning</span><span>Clustering</span><span>Scikit-learn</span>
+                            </div>
+                            <p class="project-desc">
+                                Unsupervised machine learning architecture identifying anomalous financial transactions and fraudulent behavior through customer segmentation and distance-based clustering algorithms.
+                            </p>
+
+                            <div class="project-accordion">
+                                <details>
+                                    <summary><i class="fa-solid fa-circle-info"></i> Key Details & Learnings</summary>
+                                    <div class="accordion-content">
+                                        <p><strong>Key Features:</strong> Anomaly detection using K-Means clustering, PCA dimensionality reduction, and outlier score analysis.</p>
+                                        <p><strong>Learnings:</strong> Effective preprocessing for high-dimensional financial data without labelled ground truth classes.</p>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://github.com/jimshadp2007-beep/Credit-Card-Fraud-Detection-using-Clustering" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository Link</a>
+                                <a href="#contact" class="btn btn-sm btn-primary"><i class="fa-solid fa-lock"></i> View Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Cat and Dog Image Prediction -->
+                    <div class="project-card glass-card" data-category="ml" data-keywords="cat and dog image prediction computer vision deep learning tensorflow cnn classification vision">
+                        <div class="project-banner rainbow-gradient-3">
+                            <div class="banner-icon"><i class="fa-solid fa-paw"></i></div>
+                            <div class="project-category-tag">Computer Vision & DL</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Cat & Dog Image Classification</h3>
+                            <div class="project-tech">
+                                <span>Python</span><span>TensorFlow</span><span>Computer Vision</span><span>CNN</span><span>Jupyter</span>
+                            </div>
+                            <p class="project-desc">
+                                Deep Learning image recognition system trained on visual datasets using Convolutional Neural Networks (CNNs) for automatic pet species classification.
+                            </p>
+
+                            <div class="project-accordion">
+                                <details>
+                                    <summary><i class="fa-solid fa-circle-info"></i> Key Details & Learnings</summary>
+                                    <div class="accordion-content">
+                                        <p><strong>Key Features:</strong> Image augmentation, convolutional pooling layers, loss optimization, and prediction confidence scores.</p>
+                                        <p><strong>Learnings:</strong> Hands-on experience with TensorFlow image tensor pipelines and neural network layers.</p>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://github.com/jimshadp2007-beep/cat-and-dog-predition" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository Link</a>
+                                <a href="#contact" class="btn btn-sm btn-primary"><i class="fa-solid fa-eye"></i> View Vision AI</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Global Superstore Sales Analysis -->
+                    <div class="project-card glass-card" data-category="analytics bi" data-keywords="global superstore sales analysis business intelligence power bi dashboard python retail data cleaning">
+                        <div class="project-banner rainbow-gradient-1">
+                            <div class="banner-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                            <div class="project-category-tag">Business Intelligence & Retail</div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Global Superstore Sales Analytics</h3>
+                            <div class="project-tech">
+                                <span>Power BI</span><span>Python</span><span>Data Analytics</span><span>EDA</span><span>Business Intelligence</span>
+                            </div>
+                            <p class="project-desc">
+                                Comprehensive retail business intelligence solution analyzing global sales trends, profit margins, shipping modes, and regional customer segment performance.
+                            </p>
+
+                            <div class="project-accordion">
+                                <details>
+                                    <summary><i class="fa-solid fa-circle-info"></i> Key Details & Learnings</summary>
+                                    <div class="accordion-content">
+                                        <p><strong>Key Features:</strong> Interactive KPI cards, geographical sales breakdown, product category profit analysis, and time-series forecasting.</p>
+                                        <p><strong>Learnings:</strong> Extracting commercial insights from multi-country enterprise transactional records.</p>
+                                    </div>
+                                </details>
+                            </div>
+
+                            <div class="project-footer">
+                                <a href="https://github.com/jimshadp2007-beep/Global-super-store-Sales-Analysis" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Repository Link</a>
+                                <a href="#contact" class="btn btn-sm btn-primary"><i class="fa-solid fa-chart-pie"></i> View Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Academics</span>
+                    <h2 class="section-title">Education <span class="gradient-text">Background</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="education-grid">
+                    <div class="education-card glass-card">
+                        <div class="edu-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-year">2025 – 2026 (JUN 2025 - JUN 2026)</span>
+                            <h3 class="edu-degree">Diploma in AI and Data Science</h3>
+                            <h4 class="edu-institution"><i class="fa-solid fa-university"></i> IQJITA Innovative LLP</h4>
+                            <p class="edu-focus">
+                                <strong>Relevant Focus:</strong> Data Analysis, Data Visualization, Python Programming, SQL Database Systems, Machine Learning, Business Intelligence Tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="education-card glass-card">
+                        <div class="edu-icon"><i class="fa-solid fa-school"></i></div>
+                        <div class="edu-details">
+                            <span class="edu-year">2025</span>
+                            <h3 class="edu-degree">Secondary Education Examination</h3>
+                            <h4 class="edu-institution"><i class="fa-solid fa-landmark"></i> Kerala Board of Public Examination (KBPE)</h4>
+                            <p class="edu-focus">
+                                Successfully completed secondary education with strong fundamentals in mathematics and science.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section cert-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-award"></i> Credentials</span>
+                    <h2 class="section-title">Certifications & <span class="gradient-text">Badges</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="cert-grid">
+                    <div class="cert-card glass-card">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>CTDS - AI And Data Science</h3>
+                        <p class="cert-issuer">IQJITA Innovative LLP</p>
+                        <span class="cert-tag">Advanced Diploma Track</span>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-brain"></i></div>
+                        <h3>AI & Data Science Specialist</h3>
+                        <p class="cert-issuer">IQJITA</p>
+                        <span class="cert-tag">Machine Learning Core</span>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-file-excel"></i></div>
+                        <h3>MS Excel</h3>
+                        <p class="cert-issuer">Simply Learn</p>
+                        <span class="cert-tag">Data Visualization & Pivot Tables</span>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <div class="cert-badge-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>SQL Database Management</h3>
+                        <p class="cert-issuer">Simply Learn</p>
+                        <span class="cert-tag">Queries, Joins & Optimization</span>
+                    </div>
+
+                    <div class="cert-card glass-card">
+                        <div class="cert-badge-icon"><i class="devicon-python-plain colored"></i></div>
+                        <h3>Python Machine Learning</h3>
+                        <p class="cert-issuer">Simply Learn</p>
+                        <span class="cert-tag">Algorithms & Model Evaluation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live GitHub Integration Section -->
+        <section id="github-section" class="section github-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-brands fa-github"></i> Open Source</span>
+                    <h2 class="section-title">Live <span class="gradient-text">GitHub Insights</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="github-container glass-card">
+                    <div class="github-profile-header">
+                        <div class="gh-avatar-box">
+                            <img id="gh-avatar" src="https://github.com/jimshadp2007-beep.png" alt="Jimshad P GitHub Avatar">
+                        </div>
+                        <div class="gh-user-info">
+                            <h3 id="gh-name">Jimshad P</h3>
+                            <p class="gh-handle">@jimshadp2007-beep</p>
+                            <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" class="btn btn-sm btn-outline"><i class="fa-brands fa-github"></i> Follow on GitHub</a>
+                        </div>
+                        <div class="gh-stats-row">
+                            <div class="gh-stat"><span id="gh-repos-count">3+</span><p>Repositories</p></div>
+                            <div class="gh-stat"><span id="gh-followers">--</span><p>Followers</p></div>
+                            <div class="gh-stat"><span id="gh-stars">--</span><p>Stars</p></div>
+                        </div>
+                    </div>
+
+                    <!-- GitHub Activity Grid Visualizer -->
+                    <div class="github-activity-box">
+                        <h4><i class="fa-solid fa-code-commit"></i> Contribution Matrix & Activity</h4>
+                        <div class="contribution-grid-mock">
+                            <!-- JS will dynamically populate boxes -->
+                            <div id="contrib-boxes" class="contrib-boxes"></div>
+                        </div>
+                        <div class="contrib-legend">
+                            <span>Less</span>
+                            <span class="sq sq-0"></span><span class="sq sq-1"></span><span class="sq sq-2"></span><span class="sq sq-3"></span><span class="sq sq-4"></span>
+                            <span>More</span>
+                        </div>
+                    </div>
+
+                    <!-- Fetched Repositories Container -->
+                    <div class="recent-repos-header">
+                        <h4><i class="fa-solid fa-folder-tree"></i> Live Public Repositories</h4>
+                    </div>
+                    <div class="recent-repos-grid" id="recent-repos-container">
+                        <!-- Dynamically populated via script.js -->
+                        <div class="repo-loading"><i class="fa-solid fa-spinner fa-spin"></i> Fetching repositories from GitHub API...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LinkedIn & Testimonials Section -->
+        <section class="section linkedin-section">
+            <div class="container">
+                <div class="grid-2-col">
+                    <!-- LinkedIn Card -->
+                    <div class="linkedin-card glass-card">
+                        <div class="linkedin-header">
+                            <i class="fa-brands fa-linkedin-in linkedin-logo"></i>
+                            <div>
+                                <h3>LinkedIn Profile Sync</h3>
+                                <p>Jimshad P | Data Scientist</p>
+                            </div>
+                        </div>
+                        <p class="linkedin-summary">
+                            Artificial Intelligence and Data Science professional passionate about turning data into actionable insights and intelligent solutions. Eager to collaborate on innovative AI projects.
+                        </p>
+                        <div class="linkedin-tech-stack">
+                            <span><i class="devicon-python-plain colored"></i> Python</span>
+                            <span><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                            <span><i class="fa-solid fa-chart-column bi-color"></i> Power BI</span>
+                            <span><i class="devicon-scikitlearn-line colored"></i> Scikit-learn</span>
+                        </div>
+                        <a href="https://www.linkedin.com/in/jimshad-p-906b72384" target="_blank" rel="noopener" class="btn btn-primary btn-block">
+                            <i class="fa-brands fa-linkedin"></i> Connect on LinkedIn
+                        </a>
+                    </div>
+
+                    <!-- Testimonials Placeholder Card -->
+                    <div class="testimonials-card glass-card">
+                        <div class="section-subtitle"><i class="fa-solid fa-quote-left"></i> Endorsements</div>
+                        <h3>Mentors & Collaborators</h3>
+                        <div class="testimonial-content">
+                            <p class="quote-text">
+                                "Jimshad demonstrates exceptionally strong analytical thinking and curiosity for machine learning algorithms. His ability to build end-to-end Power BI dashboards and Python ML models is highly commendable."
+                            </p>
+                            <div class="quote-author">
+                                <div class="author-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                                <div>
+                                    <strong>IQJITA Mentor</strong>
+                                    <span>AI & Data Science Faculty</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+                    <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info-column glass-card">
+                        <h3>Contact Information</h3>
+                        <p>Feel free to reach out for internships, data analytics freelance projects, or collaborative research!</p>
+
+                        <div class="info-items">
+                            <a href="mailto:jimshadp2007@gmail.com" class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>jimshadp2007@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <a href="tel:+919633784565" class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div>
+                                    <strong>Phone / WhatsApp</strong>
+                                    <span>+91 9633784565</span>
+                                </div>
+                            </a>
+
+                            <div class="info-item">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>Kerala, India (Tirur / Malappuram)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-socials">
+                            <h4>Follow My Journey</h4>
+                            <div class="social-buttons">
+                                <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" class="btn-social"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/jimshad-p-906b72384" target="_blank" rel="noopener" class="btn-social"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="mailto:jimshadp2007@gmail.com" class="btn-social"><i class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-column glass-card">
+                        <h3>Send a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Opportunity / Internship" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Hello Jimshad, I'd like to discuss an opportunity..." required></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-block">
+                                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Interactive AI Assistant Widget ("Jimshad P") -->
+    <div class="ai-widget-wrapper" id="ai-widget-wrapper">
+        <button id="ai-widget-toggle" class="ai-widget-toggle" aria-label="Open Jimshad P AI Assistant">
+            <i class="fa-solid fa-robot"></i>
+            <span class="ai-badge-pulse"></span>
+        </button>
+
+        <div class="ai-chat-window glass-card hidden" id="ai-chat-window">
+            <div class="ai-chat-header">
+                <div class="ai-bot-avatar">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <div class="ai-bot-title">
+                    <h4>Jimshad P Assistant</h4>
+                    <span class="online-status"><span class="green-dot"></span> AI Active</span>
+                </div>
+                <button id="ai-close-btn" class="ai-close-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="ai-chat-body" id="ai-chat-body">
+                <div class="chat-bubble bot-bubble">
+                    Hello! I'm Jimshad P's personal AI Assistant. Ask me anything about Jimshad's skills, ML projects, education, or contact details!
+                </div>
+            </div>
+            <div class="ai-chat-quick-prompts">
+                <button class="quick-prompt-btn">What are Jimshad's top skills?</button>
+                <button class="quick-prompt-btn">Tell me about his ML projects</button>
+                <button class="quick-prompt-btn">Is Jimshad open for internships?</button>
+            </div>
+            <div class="ai-chat-footer">
+                <input type="text" id="ai-input" placeholder="Ask Jimshad P Assistant..." autocomplete="off">
+                <button id="ai-send-btn" class="ai-send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top-btn" aria-label="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>Jimshad P</h3>
+                <p>AI • Data Science • Machine Learning</p>
+            </div>
+            <div class="footer-copy">
+                <p>&copy; 2026 Designed & Built by <strong>Jimshad P</strong>. All rights reserved.</p>
+            </div>
+            <div class="footer-socials">
+                <a href="https://github.com/jimshadp2007-beep" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jimshad-p-906b72384" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:jimshadp2007@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
